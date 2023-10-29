@@ -1,0 +1,11 @@
+.btn{
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 1px solid orange;
+    border-radius: 24px;
+    font-size: 16px;
+}
+
+.list-item{
+    font-size: 20px;
+}

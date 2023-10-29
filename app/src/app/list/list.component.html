@@ -1,0 +1,16 @@
+<button class="btn" (click)="clickButton()">
+  <ng-container *ngIf="showLastName">Hide</ng-container>
+  <ng-container *ngIf="!showLastName">Show</ng-container>
+  last name
+</button>
+
+<div *ngIf="showSelectedIndex">
+    Selected index is {{selectedUserIndex}}
+</div>
+
+<div class="list-container">
+    <div class="list-item" *ngFor="let user of users; let i = index;">
+        <app-list-item [user]="user" [showLastName]="showLastName" staticString="1" [staticNumber]="myNumber"
+        (click)="selectedUserIndex = i" (customEvent)="customEventHandler($event)"></app-list-item>
+    </div>
+</div>
