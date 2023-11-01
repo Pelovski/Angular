@@ -1,5 +1,10 @@
-<div class="header"><h1 id="title">{{title}}</h1>
-<input #titleInput type="text">
-<button class="titleBtn btn" (click)="changeTitleHandler(titleInput.value)">Change Title</button>
+<div class="container">
+ <header>
+    <app-nav [title]="title"></app-nav>
+  </header>
+
+  <body class="mt-5">
+    <app-card></app-card>
+  </body>
+
 </div>
-<app-list></app-list>
